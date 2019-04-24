@@ -7,7 +7,7 @@ class elk::filebeat{
   }
 
   service{'filebeat':
-    ensure => present,
+    ensure => running,
     enable => true,
     require => Package['filebeat']
   }
